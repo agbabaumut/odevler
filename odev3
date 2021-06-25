@@ -1,0 +1,32 @@
+""answer 1
+""
+
+select country from country
+where country ~~* 'A%a'
+
+
+""
+
+""answer2
+""
+
+select country from country
+where country ~~* '%_____n' 
+
+""
+
+""answer3
+""
+
+select * from film
+where title ilike ('%t%t%t%t%')
+
+""
+
+""answer4
+""
+
+select * from film
+where title ~~* ('C%') and length>90 and rental_rate = 2.99 ;
+
+""
