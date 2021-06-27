@@ -1,0 +1,41 @@
+""answer1
+""
+
+
+select distinct (replacement_cost) from film
+
+
+
+""answer2
+""
+
+21
+
+
+
+""answer3
+""
+
+select title from film
+where title ilike ('T%') and rating = 'G'
+
+--9 tanesi
+
+
+""answer4
+""
+
+
+select count(country )from country
+where country like ('_____')
+
+--13
+
+
+""answer5
+""
+
+select count (city) from city
+where city ilike ('%r')
+
+--33
