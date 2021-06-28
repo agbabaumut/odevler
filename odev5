@@ -1,0 +1,30 @@
+""answer 1
+"
+
+select title,length from film
+where title ilike ('%n')
+order by length desc
+limit 5
+
+
+""answer2
+""
+
+select title,length from film
+where title ilike ('%n')
+order by length desc
+offset 5 
+limit 5
+
+""
+
+
+""answer 3
+""
+
+select * from customer
+where store_id = 1
+order by last_name desc
+limit 4
+
+""
