@@ -1,0 +1,35 @@
+""answer1
+"
+select round(avg(rental_rate),2) from film
+--2.98
+
+"
+
+""answer2
+"
+
+select  count(*) from film
+where title ilike ('c%')
+
+--92
+
+"
+
+""answer3
+
+select max(length) from film
+where rental_rate = 0.99
+
+--184
+
+"
+
+""answer4
+"
+
+select count(distinct replacement_cost ) from film 
+where length >150
+
+--21
+
+"
