@@ -1,0 +1,39 @@
+""answer1
+"
+
+CREATE TABLE employee (
+	id INT,
+	name VARCHAR(50),
+	birthday DATE,
+	email VARCHAR(100)
+ 
+"
+
+
+""answer3
+"
+--1
+update employee
+set name = 'beforemillenial'
+WHERE birthday BETWEEN '19990101' and '19991231'
+
+--2
+update employee 
+set email = 'doesnt exist'
+where name ilike 'l%'
+
+--3
+update employee 
+set name = 'umut'
+where name ilike 'w%'
+
+""answer4
+"
+delete from employee 
+where id between 1 and 10
+returning *
+
+--2
+delete from employee
+where name = 'umut'
+returning *
